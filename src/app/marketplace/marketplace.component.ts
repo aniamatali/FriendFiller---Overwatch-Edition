@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class MarketplaceComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterposition: string = "";
 
   constructor(private router: Router, private userService: UserService){}
 
@@ -24,4 +25,9 @@ export class MarketplaceComponent implements OnInit {
  goToDetailPage(clickedUser) {
      this.router.navigate(['users', clickedUser.$key]);
    }
+
+onChange(optionFromMenu) {
+  this.filterposition = optionFromMenu;
+}
+
 }

@@ -1,6 +1,13 @@
 <h2>Player Roster</h2>
 
-<div *ngFor="let user of users | async" class="panel panel-default" >
+<select (change)="onChange($event.target.value)">
+  <option value="All Roles">All Roles</option>
+  <option value="Tank">Tank</option>
+  <option value="Support">Support</option>
+  <option value="DPS">DPS</option>
+</select>
+
+<div *ngFor="let user of users | async | mainclass:filterposition " class="panel panel-default" >
   <div class="panel-body">
     <h3 (click)="goToDetailPage(user)"><em>{{user.name}}</em> Position: {{user.mainclass}}</h3>
     <div *ngIf="currentRoute === '/admin'">

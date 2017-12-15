@@ -17,6 +17,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AdminComponent } from './admin/admin.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { PositionPipe } from './mainclass.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     UserDetailComponent,
     AdminComponent,
-    EditUserComponent
+    EditUserComponent,
+    PositionPipe
   ],
   imports: [
     BrowserModule,
