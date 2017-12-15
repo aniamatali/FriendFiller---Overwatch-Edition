@@ -15,6 +15,7 @@ export class MarketplaceComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   filterposition: string = "";
+  filterskill: string = "";
 
   constructor(private router: Router, private userService: UserService){}
 
@@ -28,6 +29,10 @@ export class MarketplaceComponent implements OnInit {
 
 onChange(optionFromMenu) {
   this.filterposition = optionFromMenu;
+}
+
+onChange2(optionFromMenu) {
+  this.filterskill = optionFromMenu;
 }
 
 }
