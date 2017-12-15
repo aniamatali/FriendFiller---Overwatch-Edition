@@ -1,0 +1,12 @@
+h2 {
+     font-family: 'noodle', sans-serif;
+     font-size:60px;
+     color:black;
+
+}
+
+
+@font-face {
+  font-family: 'noodle';
+  src: url("/assets/fonts/noodleitalics.ttf");
+}

@@ -11,9 +11,9 @@
   <div class="panel-body">
     <h3 (click)="goToDetailPage(user)"><em>{{user.name}}</em> Position: {{user.mainclass}}</h3>
     <div *ngIf="currentRoute === '/admin'">
-      {{user.description}}
+      <h5>{{user.description}} <img src="{{user.usercover}}" width=150px></h5>
       <br>
-      <img src="{{user.usercover}}">
+
       <hr>
       <app-edit-user [selectedUser]="user"></app-edit-user>
     </div>

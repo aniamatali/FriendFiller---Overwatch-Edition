@@ -1,3 +1,27 @@
-li {
+.navbar {
+  background-image:url("/assets/images/1.jpg");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+     font-family: 'noodle', sans-serif;
+     font-size:130px;
+}
+
+
+@font-face {
+  font-family: 'noodle';
+  src: url("/assets/fonts/noodleitalics.ttf");
+}
+
+a {
   margin-left: 100px;
+  font-family: 'noodle', sans-serif;
+  font-size:30px;
+  color:white;
+}
+
+.navbar a {
+  color:white;
 }
