@@ -14,3 +14,11 @@ h3 {
      font-family: 'noodle', sans-serif;
      font-size:40px;
 }
+
+.panel-heading {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}

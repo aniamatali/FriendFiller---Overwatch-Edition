@@ -1,0 +1,31 @@
+select {
+  margin-bottom:20px;
+  width:200px;
+}
+
+h1 {
+  font-family: 'noodle', sans-serif;
+  font-size:100px;
+}
+
+p {
+  font-family: 'noodle', sans-serif;
+  font-size:50px;
+}
+
+img {
+  float:right;
+}
+
+@font-face {
+  font-family: 'noodle';
+  src: url("/assets/fonts/noodleitalics.ttf");
+}
+
+.panel-body {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
