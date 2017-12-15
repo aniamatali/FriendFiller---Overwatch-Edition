@@ -39,10 +39,6 @@ p {
   font-size:50px;
 }
 
-img {
-border:1px solid black;
-}
-
 @font-face {
   font-family: 'noodle';
   src: url("/assets/fonts/noodleitalics.ttf");
@@ -55,4 +51,5 @@ border:1px solid black;
   background-repeat:no-repeat;
   background-attachment:fixed;
   border: 1px solid black;
+  margin-bottom:5px;
 }

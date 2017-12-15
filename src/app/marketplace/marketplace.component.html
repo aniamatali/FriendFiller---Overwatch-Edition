@@ -18,9 +18,11 @@
   <option value="Bronze">Bronze</option>
 </select>
 
-<div *ngFor="let user of users | async | mainclass:filterposition | skillrating:filterskill " class="panel panel-default" >
+
+
+<div *ngFor="let user of users | async | mainclass:filterposition | skillrating:filterskill " class="panel panel-default" class="col-md-4">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(user)"><img src="{{user.usercover}}" width=120px><br><em>{{user.name}}</em> Position: {{user.mainclass}} </h3>
+    <h3 (click)="goToDetailPage(user)"><img src="{{user.usercover}}" width=120px><br><em>{{user.name}}</em> <br>{{user.mainclass}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <h5>{{user.description}}</h5>
       <br>
