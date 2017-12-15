@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-12">
+  <div class="card">
+  <div class="card-header">
+    <h3 class="card-title">{{(userToDisplay | async).name}}</h3>
+  </div>
+  <div class="card-body">
+    <h4>{{(userToDisplay | async).mainclass}}</h4>
+    <p>{{(userToDisplay | async).skillrating}}</p>
+    <p>{{(userToDisplay | async).playtimes}}</p>
+  </div>
+  <div class="card-footer">
+    <p>{{(userToDisplay | async).description}}</p>
+  </div>
+</div>
+  <img src="{{(userToDisplay | async).usercover}}" width=200px>
+</div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <a class="text-muted" routerLink="admin">Admin</a>
+  </div>
+</footer>

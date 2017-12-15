@@ -1,0 +1,99 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Player to Roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+
+      <div>
+        <label>User Name:</label>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Preferred Position:</label>
+          <select #newMainClass>
+            <option value = "Tank">Tank</option>
+            <option value = "Support">Support</option>
+            <option value = "DPS">DPS</option>
+        </select>
+      </div>
+
+      <div>
+        <label>User Description:</label>
+        <input #newDescription>
+      </div>
+
+      <div>
+        <label>Skill Rating:</label>
+          <select #newSkillRating>
+            <option value = "Bronze">Bronze</option>
+            <option value = "Silver">Silver</option>
+            <option value = "Gold">Gold</option>
+            <option value = "Platinum">Platinum</option>
+            <option value = "Diamond">Diamond</option>
+            <option value = "Master">Master</option>
+            <option value = "Grandmaster">Grandmaster</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Availability:</label>
+          <select #newPlayTimes>
+            <option value = "Weekdays AM">Weekdays AM</option>
+            <option value = "Weekdays PM">Weekdays PM</option>
+            <option value = "Weekends AM">Weekends AM</option>
+            <option value = "Weekends PM">Weekends PM</option>
+            <option value = "Always">Always</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Player Avatar:</label>
+        <select #newUserCover>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-76_OW_JP_400x400-300x300.png?alt=media&token=4cf81309-68a9-4df1-ace7-d9d135add5fe">Soldier 76</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Bastion_OW_JP_400x400-300x300.png?alt=media&token=a0b09681-35a5-4614-a03e-40899dda8397">Bastion</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-DVa_OW_JP_400x400-300x300.png?alt=media&token=79ad3536-0914-410a-baa8-837f303d4c9e">D.VA</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Genji_OW_JP_400x400-300x300.png?alt=media&token=16d2f4c2-7d02-4e05-8767-c7b2b342fdb4">Genji</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Hanzo_OW_JP_400x400-300x300.png?alt=media&token=10e6d327-adc7-48b8-ab0c-6d6c81c8246d">Hanzo</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Junkrat_OW_JP_400x400-300x300.png?alt=media&token=3b4ba007-1983-4520-9c9f-fffc024203db">Junkrat</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Lucio_OW_JP_400x400-300x300.png?alt=media&token=1c883968-a3f5-46b4-ba3f-e62a1d78a0c8">Lucio</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-McCree_OW_JP_400x400-300x300.png?alt=media&token=bd96bf31-f1f3-44f8-93e1-31fb70fa01a4">McCree</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Mei_OW_JP_400x400-300x300.png?alt=media&token=85ad7c08-9251-4536-bd7b-3111bd5e5b80">Mei</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Mercy_OW_JP_400x400-300x300.png?alt=media&token=79e1fb68-e7ca-4f08-a877-6cf876f51d9e">Mercy</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Pharah_OW_JP_400x400-300x300.png?alt=media&token=68724cde-c623-4499-a18a-926eb08ed651">Pharah</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Reaper_OW_JP_400x400-300x300.png?alt=media&token=761ee73d-118a-420e-a5a2-de1dee903f65">Reaper</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Reinhardt_OW_JP_400x400-300x300.png?alt=media&token=38b401a3-464a-4c17-a43d-d21423a730b3">Reinhardt</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Roadhog_OW_JP_400x400-300x300.png?alt=media&token=1f1cc735-5d02-475a-87d9-96fae92e0da0">Roadhog</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Symmetra_OW_JP_400x400-300x300.png?alt=media&token=f94ab3be-51a8-4f4f-80cb-1d645d01c30b">Symmetra</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Torbjorn_OW_JP_400x400-300x300.png?alt=media&token=59ac9497-a2d8-4bc3-9ce3-214ad862cb8c">Torbjorn</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Tracer_OW_JP_400x400-300x300.png?alt=media&token=1c8f2b98-769c-4c81-b444-9586fa76c41c">Tracer</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Widowmaker_OW_JP_400x400-300x300.png?alt=media&token=1a482447-e44d-4c9f-bffd-49a594fbc99f">Widowmaker</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Winston_OW_JP_400x400-300x300.png?alt=media&token=85de6b85-5e1f-4d63-acdf-37f414c38eb8">Winston</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Zarya_OW_JP_400x400-300x300.png?alt=media&token=088e7b81-042d-4993-a23c-c100208660f5">Zarya</option>
+          <option value = "https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/CuteSprayAvatars-Zenyatta_OW_JP_400x400-300x300.png?alt=media&token=58c8da1b-fb97-4ef2-bf9b-6d339f4ebb6d">Zenyatta</option>
+      </select>
+      </div>
+
+    <button (click)="submitForm(
+       newName.value,
+       newMainClass.value,
+       newDescription.value,
+       newSkillRating.value,
+       newPlayTimes.value,
+       newUserCover.value
+       );
+       newName.value='';
+       newMainClass.value='';
+       newDescription.value='';
+       newSkillRating.value='';
+       newPlayTimes.value='';
+       newUserCover.value='';">Add</button>
+
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-marketplace></app-marketplace>
+</div>

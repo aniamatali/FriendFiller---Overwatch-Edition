@@ -1,0 +1,14 @@
+<h2>Player Roster</h2>
+
+<div *ngFor="let user of users | async" class="panel panel-default" >
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(user)"><em>{{user.name}}</em> Position: {{user.mainclass}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{user.description}}
+      <br>
+      <img src="{{user.usercover}}">
+      <hr>
+      <app-edit-user [selectedUser]="user"></app-edit-user>
+    </div>
+  </div>
+</div>
