@@ -19,6 +19,7 @@ import { AdminComponent } from './admin/admin.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { PositionPipe } from './mainclass.pipe';
 import { RankPipe } from './skillrating.pipe';
+import { AvailabilityPipe } from './availability.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     AdminComponent,
     EditUserComponent,
     PositionPipe,
-    RankPipe
+    RankPipe,
+    AvailabilityPipe
   ],
   imports: [
     BrowserModule,

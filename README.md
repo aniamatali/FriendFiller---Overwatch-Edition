@@ -27,7 +27,7 @@ FriendFiller - OW Edition
 * Firebase
 * HTML
 * CSS
-*
+
 
 ### Installation
 

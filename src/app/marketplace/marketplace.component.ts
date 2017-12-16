@@ -16,6 +16,7 @@ export class MarketplaceComponent implements OnInit {
   currentRoute: string = this.router.url;
   filterposition: string = "";
   filterskill: string = "";
+  filteravailability: string = "";
 
   constructor(private router: Router, private userService: UserService){}
 
@@ -34,5 +35,10 @@ onChange(optionFromMenu) {
 onChange2(optionFromMenu) {
   this.filterskill = optionFromMenu;
 }
+
+onChange3(optionFromMenu) {
+  this.filteravailability = optionFromMenu;
+}
+
 
 }

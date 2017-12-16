@@ -18,9 +18,17 @@
   <option value="Bronze">Bronze</option>
 </select>
 
+<select (change)="onChange3($event.target.value)">
+  <option value="Weekdays AM">Weekdays AM</option>
+  <option value="Weekdays PM">Weekdays PM</option>
+  <option value="Weekends AM">Weekends AM</option>
+  <option value="Weekends PM">Weekends PM</option>
+  <option value="Always">Always</option>
+</select>
 
 
-<div *ngFor="let user of users | async | mainclass:filterposition | skillrating:filterskill " class="panel panel-default" class="col-md-4">
+
+<div *ngFor="let user of users | async | mainclass:filterposition | skillrating:filterskill | availability:filteravailability " class="panel panel-default" class="col-md-4">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(user)"><img src="{{user.usercover}}" width=120px><br><em>{{user.name}}</em> <br>{{user.mainclass}}</h3>
     <div *ngIf="currentRoute === '/admin'">
