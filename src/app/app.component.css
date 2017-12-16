@@ -1,8 +1,17 @@
 .navbar {
+  background-image:url("/assets/images/3.jpg");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  transition: all 0.35s ease-in-out;
+}
+
+.navbar:hover {
   background-image:url("/assets/images/1.jpg");
   background-repeat:no-repeat;
   background-attachment: fixed;
+  transition: all 0.35s ease-in-out;
 }
+
 
 h1 {
      font-family: 'noodle', sans-serif;
@@ -25,6 +34,21 @@ a {
   color:white;
 }
 
+a:hover {
+  font-size:40px;
+  transition: all 0.35s ease-in-out;
+}
+
 .navbar a {
   color:white;
+}
+
+#homebutt {
+  color:white;
+  text-decoration:none;
+}
+
+#homebutt:hover {
+  color:black;
+  opacity:1;
 }
