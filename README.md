@@ -1,28 +1,47 @@
-# Team-Roster
+# FriendFiller - Overwatch Edition
+FriendFiller is a web-app to help people keep track of people they play with, whether they be guildmates or acquaintences met online.  You can filter by rank as well as keep notes on peoples playstyles to help fill roles for your team composition.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+# Features
 
-## Development server
+  - Add a friend with the properties of Name, Position, Description, Skill Rating, Times they play, and Main Character!
+  - Filter your friends list by Roles and Skill Rating to find the perfect fit.
+  - Edit friends information in case they change their time of play or preferred characters or roles.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip1.JPG?alt=media&token=77052805-dd78-4560-8f2c-ee51c273ce8a)
 
-## Code scaffolding
+You can also:
+  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
+  - Drag and drop markdown and HTML files into Dillinger
+  - Export documents as Markdown, HTML and PDF
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+    ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip4.JPG?alt=media&token=fded75f5-a60e-419f-9252-b00c67f61756)
 
-## Build
+### Tech
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+FriendFiller - OW Edition
 
-## Running unit tests
+* AngularJS
+* Bootstrap
+* node.js
+* Javascript
+* Firebase
+* HTML
+* CSS
+    ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip2.JPG?alt=media&token=9c3be3eb-8b1c-4876-9033-a9b43bd547f8)
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+create a firebase account
+get your firebase credentials
+clone the repository
+npm install
+bower install
+create an api-keys.ts file filling in the information for apiKey, authDomaind, databaseURL, storageBucket, messagingSenderId with the information obtained from your database webapp on firebase
+place this api-keys.ts file into the app folder
+ng serve
+navigate to localhost:4200
+```
+License
+----
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2017 {Alvin Niamatali}
