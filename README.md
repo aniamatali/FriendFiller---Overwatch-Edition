@@ -27,7 +27,8 @@ FriendFiller - OW Edition
 * Firebase
 * HTML
 * CSS
-    ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip2.JPG?alt=media&token=9c3be3eb-8b1c-4876-9033-a9b43bd547f8)
+*
+
 ### Installation
 
 ```sh
@@ -45,3 +46,4 @@ License
 ----
 
 Copyright (c) 2017 {Alvin Niamatali}
+ ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip2.JPG?alt=media&token=9c3be3eb-8b1c-4876-9033-a9b43bd547f8)
