@@ -44,6 +44,7 @@ navigate to localhost:4200
 ```
 License
 ----
-
+Overwatch™
+®2016 Blizzard Entertainment, Inc. All rights reserved. Overwatch is a trademark or registered trademark of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
 Copyright (c) 2017 {Alvin Niamatali}
  ![](https://firebasestorage.googleapis.com/v0/b/testdb-643b7.appspot.com/o/snip2.JPG?alt=media&token=9c3be3eb-8b1c-4876-9033-a9b43bd547f8)
