@@ -1,3 +1,20 @@
+@keyframes fadeInBlur {
+  0% {
+    opacity: 0;
+
+    filter:blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter:blur(0px);
+  }
+}
+
+.card {
+  animation: 1s ease-in 0s 1 fadeInBlur;
+  filter:blur(0px);
+}
+
 select {
   margin-bottom:20px;
   width:200px;
@@ -34,4 +51,8 @@ img {
 @font-face {
   font-family: 'noodle';
   src: url("/assets/fonts/noodleitalics.ttf");
+}
+
+#detailrow {
+  margin-top:75px;
 }

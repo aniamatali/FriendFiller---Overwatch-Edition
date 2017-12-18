@@ -1,28 +1,23 @@
-<div class="row">
+<div class="row" id="detailrow">
   <div class="col-md-12">
-  <div class="card">
-  <div class="card-header">
-    <h3 class="card-title">{{(userToDisplay | async).name}} <img src="{{(userToDisplay | async).usercover}}" width=150px></h3>
-  </div>
-  <div class="card-body">
 
+    <div class="card">
 
-    <h4>Position:</h4> <h5>{{(userToDisplay | async).mainclass}}</h5><br>
-    <h4>Rank:</h4> <h5> {{(userToDisplay | async).skillrating}}</h5><br>
-    <h4>Availability:</h4> <h5> {{(userToDisplay | async).playtimes}}</h5>
+      <div class="card-header">
+        <h3 class="card-title">{{(userToDisplay | async).name}} <img src="{{(userToDisplay | async).usercover}}" width=150px></h3>
+      </div>
 
-  </div>
+      <div class="card-body">
+        <h4>Position:</h4> <h5>{{(userToDisplay | async).mainclass}}</h5><br>
+        <h4>Rank:</h4> <h5> {{(userToDisplay | async).skillrating}}</h5><br>
+        <h4>Availability:</h4> <h5> {{(userToDisplay | async).playtimes}}</h5>
+      </div>
 
-  <div class="card-footer">
-    <h4>Additional Information</h4>
-    <p>{{(userToDisplay | async).description}}</p>
+      <div class="card-footer">
+        <h4>Additional Information</h4>
+        <p>{{(userToDisplay | async).description}}</p>
+      </div>
+    </div>
+
   </div>
 </div>
-
-</div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
-  </div>
-</footer>
