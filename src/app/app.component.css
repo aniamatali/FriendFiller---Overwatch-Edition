@@ -9,6 +9,7 @@
   position:fixed;
   z-index:1;
   width:100%;
+
 }
 
 .navbar:hover {
@@ -38,11 +39,13 @@ a {
   font-family: 'noodle', sans-serif;
   font-size:30px;
   color:white;
+  filter: drop-shadow(4px 4px 6px black);
 }
 
 a:hover {
   font-size:40px;
   transition: all 0.35s ease-in-out;
+  filter: drop-shadow(8px 8px 10px black);
 }
 
 .navbar a {
